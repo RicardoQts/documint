@@ -1,96 +1,123 @@
-# 📄 DocuMint – Bulk Word Document Generator from Excel Data
+# DocuMint: Automate Your Document Generation 🌟
 
-**DocuMint** is a web-based document generator that turns Excel spreadsheets into individually customised Word documents using a single template. Perfect for contracts, documents, tenancy forms, and any admin task requiring personalised files — in bulk.
+![DocuMint Logo](https://img.shields.io/badge/DocuMint-Ready%20to%20Automate-green)
 
-[🟢 Live Demo – Try DocuMint Now](https://documint.onrender.com/)
+Welcome to **DocuMint**, a lightweight Flask web application designed to simplify the process of generating personalized Word documents. With DocuMint, you can automate the bulk generation of documents by merging a .docx template with data from an Excel sheet. This tool is perfect for small businesses, administrative tasks, and anyone who needs to create multiple documents quickly and efficiently.
 
----
+## Table of Contents
 
-### 🔥 Why DocuMint?
+- [Features](#features)
+- [Getting Started](#getting-started)
+- [Usage](#usage)
+- [Technologies Used](#technologies-used)
+- [Contributing](#contributing)
+- [License](#license)
+- [Releases](#releases)
 
-Microsoft Word's Mail Merge is useful — but limited. It only creates one long .docx file with multiple pages for different recipients. You still have to split the document manually.
+## Features
 
-DocuMint does it better:
+- **Bulk Document Generation**: Create multiple documents in one go.
+- **Template Merging**: Easily merge Word templates with Excel data.
+- **User-Friendly Interface**: Simple web interface for uploading files.
+- **Zipped Output**: Automatically zips generated documents for easy download.
+- **Open Source**: Free to use and modify.
 
-Creates separate Word files, one for each row of your Excel spreadsheet
+## Getting Started
 
-Automatically names each file
+To get started with DocuMint, follow these steps:
 
-Packages them all in a ZIP, ready to download
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/RicardoQts/documint.git
+   cd documint
+   ```
 
----
+2. **Install Dependencies**:
+   Ensure you have Python installed. Then, run:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
+3. **Run the Application**:
+   Start the Flask server:
+   ```bash
+   python app.py
+   ```
 
-## 🚀 Features
+4. **Access the Web App**:
+   Open your browser and navigate to `http://127.0.0.1:5000`.
 
-- 📝 Upload a Word `.docx` template with placeholders or merge fields
-- 📊 Upload an Excel file with matching column headers
-- 🔁 Choose a column to name the generated documents
-- 📂 Merge fields into both **paragraphs** and **tables**
-- 🗂️ Download a ZIP file with all generated documents
-- 🧹 Auto-cleans temporary files after download
+## Usage
 
----
+Using DocuMint is straightforward:
 
-## ▶️ How to Use
+1. **Upload Your Files**:
+   - Upload a Word file that contains placeholders (e.g., {{name}}, {{date}}).
+   - Upload an Excel file with corresponding data.
 
-### 1. Prepare Your Excel File
-Each row should represent one document. The column headers will become your placeholders.
+2. **Generate Documents**:
+   Click on the "Generate" button. DocuMint will process the files and create a separate document for each row in the Excel sheet.
 
-![Excel Screenshot](static/Excel.png)
+3. **Download the Zipped Files**:
+   Once the documents are generated, you can download them as a zip file.
 
+![DocuMint Interface](https://img.shields.io/badge/Interface-Simple%20and%20Clean-blue)
 
-### 2. Prepare Your Word Template
-Use one of the two supported methods:
+## Technologies Used
 
-✅ Option 1: Custom Placeholders
-Type placeholders like «First_Name» directly in Word
-Replace spaces with underscores to match Excel column names
+DocuMint is built using the following technologies:
 
-✅ Option 2: Insert Merge Field (Advanced)
-Open Word > Mailings > Select Recipients > Use Existing List…
-Load your Excel
-Use Insert Merge Field for placeholders (e.g. First_Name)
-Save the .docx file
+- **Flask**: A lightweight web framework for Python.
+- **Python-docx**: A library for creating and updating Microsoft Word (.docx) files.
+- **OpenPyXL**: A library for reading and writing Excel files.
+- **Pandas**: A powerful data manipulation library for Python.
 
-![Word Screenshot 1](static/Word1.png) 
-![Word Screenshot 2](static/Word2.png)
+### Topics
 
----
+This project covers various topics, including:
 
-## 📁 Project Structure
+- admin-tools
+- automation-tool
+- bulk-document-generation
+- contract-automation
+- contract-generator
+- document-automation
+- docx-automation
+- excel-to-docx
+- flask
+- mail-merge
+- openpyxl
+- pandas
+- python
+- python-docx
+- small-business-tools
+- template-engine
+- webapp
+- word-documents
+- word-merge
 
-documint/
-├── main.py # Flask app
-├── requirements.txt # Python dependencies
-├── .gitignore # Git ignored files/folders
-├── README.md # Project description
-├── templates/ # HTML templates
-│ ├── index.html
-│ └── choose_column.html
-├── static/ # Static assets (e.g. logo)
-│ └── generated-icon.png
-├── uploads/ # Temporary folder for uploaded files
-├── output/ # Temporary folder for processed files
+## Contributing
 
----
+Contributions are welcome! If you have suggestions or improvements, feel free to open an issue or submit a pull request. Please follow these steps:
 
-## ⚙️ Requirements
+1. Fork the repository.
+2. Create a new branch for your feature.
+3. Make your changes.
+4. Commit and push your changes.
+5. Open a pull request.
 
-- Python 3.8+
-- `pip install -r requirements.txt` (includes Flask, pandas, python-docx, openpyxl)
+## License
 
----
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-## 💼 Example Use Cases
-Contracts
-Letters of offer or employment
-Bulk tenancy agreements
-Certificates or registration confirmations
-School or healthcare document mail-outs
+## Releases
 
----
+To download the latest release of DocuMint, visit the [Releases](https://github.com/RicardoQts/documint/releases) section. You will find the latest version available for download. Make sure to check the release notes for updates and changes.
 
-## 🔐 Security Notes
-Uploaded and generated files are stored only temporarily.
-All files are deleted immediately after ZIP download.
+If you need to download a specific file, please follow the link above.
+
+## Conclusion
+
+DocuMint offers a simple and effective solution for automating document generation. By leveraging Flask and other powerful libraries, it streamlines the process of creating personalized documents. Whether you're managing contracts, invoices, or any other type of document, DocuMint can save you time and effort.
+
+For any questions or support, feel free to check the [Releases](https://github.com/RicardoQts/documint/releases) section or open an issue in the repository. Happy automating!
